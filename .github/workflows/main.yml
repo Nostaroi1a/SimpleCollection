@@ -11,8 +11,6 @@ jobs:
     
     steps:
     - name: Copy File
-      run: cp static/data/mounts.json mounts.json  # Passe den Pfad entsprechend an
-      env:
-        SOURCE_REPO: kevinclement/SimpleArmory
-        DESTINATION_REPO: Nostaroi1a/SimpleCollection
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        wget https://raw.githubusercontent.com/kevinclement/SimpleArmory/master/static/data/mounts.json -O source-file
+        cp source-file path/
