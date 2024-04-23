@@ -27,5 +27,5 @@ jobs:
     steps:
     - name: Copy File
       run: |
-        wget https://raw.githubusercontent.com/kevinclement/SimpleArmory/master/static/data/mounts.json -O /path/source-file.json
-        cp /path/source-file.json testfile.json
+        wget https://raw.githubusercontent.com/kevinclement/SimpleArmory/master/static/data/mounts.json -O path/source-file.json
+        cp path/source-file.json testfile.json
