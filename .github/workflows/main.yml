@@ -5,7 +5,7 @@ on:
     inputs:
       logLevel:
         description: 'Log level'
-        required: true
+        required: false
         default: 'warning'
         type: choice
         options:
@@ -19,7 +19,7 @@ on:
       environment:
         description: 'Environment to run tests against'
         type: environment
-        required: true
+        required: false
 jobs:
   copy_file:
     runs-on: ubuntu-latest
