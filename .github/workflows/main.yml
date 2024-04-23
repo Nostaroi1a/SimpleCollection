@@ -1,0 +1,18 @@
+name: Copy File Workflow
+
+on:
+  push:
+    branches:
+      - main  # Ändere den Branch-Namen entsprechend
+
+jobs:
+  copy_file:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Copy File
+      run: cp static/data/mounts.json mounts.json  # Passe den Pfad entsprechend an
+      env:
+        SOURCE_REPO: kevinclement/SimpleArmory
+        DESTINATION_REPO: Nostaroi1a/SimpleCollection
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
