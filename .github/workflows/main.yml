@@ -25,7 +25,20 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2  # Stellt sicher, dass das Repository ausgecheckt ist, damit Dateien hinzugefügt werden können
+    
     - name: Copy File
+      run: wget https://raw.githubusercontent.com/kevinclement/SimpleArmory/master/static/data/mounts.json -O source-file
+    
+    - name: Commit Files
       run: |
-        wget https://raw.githubusercontent.com/kevinclement/SimpleArmory/master/static/data/mounts.json -O source-file
-        cp source-file ./path
+        git config --global user.email "Nostaroi1a@gmail.com"
+        git config --global user.name "GitHub Actions"
+        git add .
+        git commit -m "Add mounts.json"
+    
+    - name: Push Changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # Stellt sicher, dass der Workflow mit den notwendigen Berechtigungen pushen kann
