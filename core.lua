@@ -222,6 +222,8 @@ function SimpleCollection:OnInitialize()
 
     LibStub("AceConfig-3.0"):RegisterOptionsTable(title, myOptionsTable)
   	LibStub("AceConfigDialog-3.0"):AddToBlizOptions(title, title)
+
+	local WagoAnalytics = LibStub("WagoAnalytics"):Register("EGPXWeG1")
 end
 
 local addon_initialized = false
@@ -282,4 +284,5 @@ function SimpleCollection:MySlashProcessorFunc(input)
         print("|cffFF0000/" .. title .. "|cffFFFFFF: Shows your SimpleCollection")
         print("|cffFF0000/sc|cffFFFFFF: Shows your SimpleCollection")
     end
+
 end
