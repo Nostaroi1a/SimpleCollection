@@ -10,4 +10,8 @@ embeds.xml
 frame.xml
 frames.lua
 collection.lua
+
 core.lua
+
+## OptionalDependencies: WagoAnalytics
+libs\WagoAnalyticsShim\Shim.lua
