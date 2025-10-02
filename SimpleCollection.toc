@@ -1,0 +1,13 @@
+## Interface: 110200
+## Title: SimpleCollection
+## Author: Nostàroi-Antonidas
+## Version: 1.0
+## AddonCompartmentFunc: SC_OnAddonCompartmentClick
+## SavedVariables: SCOptions
+
+data/data.lua
+embeds.xml
+frame.xml
+frames.lua
+collection.lua
+core.lua

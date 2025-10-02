@@ -1,0 +1,20 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+	<Frame name="SCFrameTemplate" virtual="true" inherits="BackdropTemplate">
+		<KeyValues>
+            <KeyValue key="backdropInfo" value="BACKDROP_TEXT_PANEL_0_16" type="global"/>
+            <KeyValue key="backdropColor" value="BLACK" type="global"/>
+            <KeyValue key="backdropBorderColor" value="BLACK" type="global"/>
+        </KeyValues>
+		<Layers>
+			<Layer level="BACKGROUND" textureSubLevel="-1">
+				<Texture parentKey="MainWindow" file="Interface\Buttons\WHITE8X8" horizTile="true" vertTile="true"/>
+				<Texture parentKey="TitleBar" file="Interface\Buttons\WHITE8X8" inherits="_UI-Frame-TitleTile">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="0" y="0"/>
+						<Anchor point="TOPRIGHT" x="0" y="0"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+	</Frame>
+</Ui>
