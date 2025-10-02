@@ -1,44 +1,38 @@
-name: Copy File Workflow
+name: Build data.lua
 
 on:
+  schedule:
+    - cron: "0 0 2 * *" 
   workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: false
-        default: 'warning'
-        type: choice
-        options:
-        - info
-        - warning
-        - debug
-      tags:
-        description: 'Test scenario tags'
-        required: false
-        type: boolean
-      environment:
-        description: 'Environment to run tests against'
-        type: environment
-        required: false
+
 jobs:
-  copy_file:
+  build:
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2  # Stellt sicher, dass das Repository ausgecheckt ist, damit Dateien hinzugefügt werden können
-    
-    - name: Copy File
-      run: wget https://raw.githubusercontent.com/kevinclement/SimpleArmory/master/static/data/mounts.json -O source-file
-    
-    - name: Commit Files
-      run: |
-        git config --global user.email "Nostaroi1a@gmail.com"
-        git config --global user.name "GitHub Actions"
-        git add .
-        git commit -m "Add mounts.json"
-    
-    - name: Push Changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # Stellt sicher, dass der Workflow mit den notwendigen Berechtigungen pushen kann
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Download mounts.json
+        run: curl -sL https://raw.githubusercontent.com/kevinclement/SimpleArmory/master/static/data/mounts.json -o mounts.json
+
+      - name: Create data.lua
+        run: |
+          mkdir -p data
+          {
+            echo 'SimpleCollectionData = [['
+            echo '    {'
+            echo '        "id": "xxallxx",'
+            echo '        "name": "AllMounts",'
+            echo '        "all": '
+            cat mounts.json
+            echo '}'
+            echo ']]'
+          } > data/data.lua
+
+      - name: Commit and Push
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/data.lua
+          git commit -m "Update data.lua from mounts.json" || echo "No changes to commit"
+          git push
