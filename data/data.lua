@@ -249,6 +249,25 @@ SimpleCollectionData = [[
           }
         ],
         "name": "War Within: Season 3"
+      },
+      {
+        "items": [
+          {
+            "ID": 2566,
+            "icon": "inv_bloodelementalmount",
+            "itemId": 242795,
+            "name": "Lana'thel's Crimson Cascade",
+            "spellid": 1233925
+          },
+          {
+            "ID": 2620,
+            "icon": "inv_elekkfelmount_purple",
+            "itemId": 246920,
+            "name": "Void-Razed Elekk",
+            "spellid": 1244260
+          }
+        ],
+        "name": "Blizzard Store"
       }
     ]
   },
@@ -10474,15 +10493,6 @@ SimpleCollectionData = [[
             "spellid": 1244259
           },
           {
-            "ID": 2620,
-            "icon": "inv_elekkfelmount_purple",
-            "itemId": 246920,
-            "name": "Void-Razed Elekk",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1244260
-          },
-          {
             "ID": 2622,
             "icon": "inv_headlesshorsemanmount2_blue",
             "itemId": 247720,
@@ -11846,6 +11856,7 @@ SimpleCollectionData = [[
             "icon": "inv_murlocmount_orange",
             "itemId": 228751,
             "name": "Gigantic Grrloc",
+            "notObtainable": true,
             "spellid": 463025
           },
           {
@@ -11853,6 +11864,7 @@ SimpleCollectionData = [[
             "icon": "inv_celestialcatmount",
             "itemId": 225250,
             "name": "Startouched Furline",
+            "notObtainable": true,
             "spellid": 454682
           },
           {
@@ -11860,9 +11872,14 @@ SimpleCollectionData = [[
             "icon": "inv_murlocmount_blue",
             "itemId": 243194,
             "name": "Grandiose Grrloc",
-            "notObtainable": true,
-            "notReleased": true,
             "spellid": 1234971
+          },
+          {
+            "ID": 2632,
+            "icon": "7132488",
+            "itemId": 247848,
+            "name": "Astral Aurochs",
+            "spellid": 1245604
           }
         ],
         "name": "Annual Subscription"
@@ -12408,15 +12425,6 @@ SimpleCollectionData = [[
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1256677
-          },
-          {
-            "ID": 2632,
-            "icon": "7132488",
-            "itemId": 247848,
-            "name": "Astral Aurochs",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1245604
           }
         ],
         "name": "Unknown"
