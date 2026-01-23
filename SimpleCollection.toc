@@ -1,4 +1,4 @@
-## Interface: 110200
+## Interface: 120000
 ## Title: SimpleCollection
 ## Author: Nostàroi-Antonidas
 ## Version: 1.0
@@ -12,3 +12,4 @@ frames.lua
 collection.lua
 
 core.lua
+
