@@ -1,4 +1,4 @@
-## Interface: 120000
+## Interface: 120000, 120005, 120007
 ## Title: SimpleCollection
 ## Author: Nostàroi-Antonidas
 ## Version: 1.0
