@@ -165,28 +165,35 @@ SimpleCollectionData = [[
       {
         "items": [
           {
-            "ID": 1824,
-            "icon": "inv_dogprimalmount",
-            "itemId": 210141,
-            "name": "Brown-Furred Spiky Bakar",
-            "spellid": 424601
+            "ID": 2524,
+            "icon": "inv_chimerafiremount_blue",
+            "itemId": 238941,
+            "name": "Coldflame Cormaera",
+            "spellid": 1226740
           },
           {
-            "ID": 2928,
-            "icon": "inv_gilneashorsemount",
-            "itemId": 268363,
-            "name": "Pyrewood Rebel's Rouncey",
-            "spellid": 1282275
+            "ID": 2504,
+            "icon": "ability_mount_goatmountblack",
+            "itemId": 236415,
+            "name": "Spotted Black Riding Goat",
+            "spellid": 1219705
           },
           {
-            "ID": 2929,
-            "icon": "inv_gilneashorsemount",
-            "itemId": 268364,
-            "name": "Gilneas Loyalist's Rouncey",
-            "spellid": 1282276
+            "ID": 2940,
+            "icon": "inv_gianteagle2sunwalkermount_dark",
+            "itemId": 268877,
+            "name": "Dusk-Painted Sun Roc",
+            "spellid": 1283908
+          },
+          {
+            "ID": 2941,
+            "icon": "inv_gianteagle2sunwalkermount_gold",
+            "itemId": 268876,
+            "name": "Flame-Painted Sun Roc",
+            "spellid": 1283910
           }
         ],
-        "name": "Trading Post: May"
+        "name": "Trading Post: June"
       },
       {
         "items": [
@@ -616,7 +623,7 @@ SimpleCollectionData = [[
             "ID": 2990,
             "icon": "inv_voidforgedmechsuit",
             "itemId": 274650,
-            "name": "Arcforged Nullframe",
+            "name": "Netherforged Nullframe",
             "new": true,
             "spellid": 1294663
           },
@@ -624,7 +631,7 @@ SimpleCollectionData = [[
             "ID": 3033,
             "icon": "achievement_dungeon_sanguinedepths_kryxis",
             "itemId": 275664,
-            "name": "Tortured Gorger",
+            "name": "Void-Tortured Gorger",
             "new": true,
             "spellid": 1297427
           }
@@ -10438,7 +10445,6 @@ SimpleCollectionData = [[
           },
           {
             "ID": 1824,
-            "highlighted": true,
             "icon": "inv_dogprimalmount",
             "itemId": 210141,
             "name": "Brown-Furred Spiky Bakar",
@@ -10460,6 +10466,7 @@ SimpleCollectionData = [[
           },
           {
             "ID": 2524,
+            "highlighted": true,
             "icon": "inv_chimerafiremount_blue",
             "itemId": 238941,
             "name": "Coldflame Cormaera",
@@ -10467,6 +10474,7 @@ SimpleCollectionData = [[
           },
           {
             "ID": 2504,
+            "highlighted": true,
             "icon": "ability_mount_goatmountblack",
             "itemId": 236415,
             "name": "Spotted Black Riding Goat",
@@ -10614,7 +10622,6 @@ SimpleCollectionData = [[
           },
           {
             "ID": 2928,
-            "highlighted": true,
             "icon": "inv_gilneashorsemount",
             "itemId": 268363,
             "name": "Pyrewood Rebel's Rouncey",
@@ -10622,11 +10629,26 @@ SimpleCollectionData = [[
           },
           {
             "ID": 2929,
-            "highlighted": true,
             "icon": "inv_gilneashorsemount",
             "itemId": 268364,
             "name": "Gilneas Loyalist's Rouncey",
             "spellid": 1282276
+          },
+          {
+            "ID": 2940,
+            "highlighted": true,
+            "icon": "inv_gianteagle2sunwalkermount_dark",
+            "itemId": 268877,
+            "name": "Dusk-Painted Sun Roc",
+            "spellid": 1283908
+          },
+          {
+            "ID": 2941,
+            "highlighted": true,
+            "icon": "inv_gianteagle2sunwalkermount_gold",
+            "itemId": 268876,
+            "name": "Flame-Painted Sun Roc",
+            "spellid": 1283910
           },
           {
             "ID": 799,
@@ -10960,24 +10982,6 @@ SimpleCollectionData = [[
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1283906
-          },
-          {
-            "ID": 2940,
-            "icon": "inv_gianteagle2sunwalkermount_dark",
-            "itemId": 268877,
-            "name": "Dusk-Painted Sun Roc",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1283908
-          },
-          {
-            "ID": 2941,
-            "icon": "inv_gianteagle2sunwalkermount_gold",
-            "itemId": 268876,
-            "name": "Flame-Painted Sun Roc",
-            "notObtainable": true,
-            "notReleased": true,
-            "spellid": 1283910
           },
           {
             "ID": 2942,
@@ -13410,6 +13414,24 @@ SimpleCollectionData = [[
             "notObtainable": true,
             "notReleased": true,
             "spellid": 1263369
+          },
+          {
+            "ID": 2937,
+            "icon": "7673157",
+            "itemId": 268833,
+            "name": "Zothwing Darkseeker",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1283837
+          },
+          {
+            "ID": 2938,
+            "icon": "7673158",
+            "itemId": 268834,
+            "name": "Zothwing Deepseeker",
+            "notObtainable": true,
+            "notReleased": true,
+            "spellid": 1283838
           }
         ],
         "name": "Unknown"
