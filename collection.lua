@@ -12,9 +12,10 @@ local CATEGORY_TITLE_HEIGHT = 40
 local CATEGORY_SPACING = 60
 local MAX_ITEMS_PER_ROW = math.floor(CONTENT_WIDTH / ITEM_SIZE)
 
--- Frame caches: item buttons are keyed by mount ID and reused across rebuilds,
--- category/subcategory frames are recycled through simple pools.
-local itemButtons = {}
+-- Frame caches: all frames are recycled through simple pools across rebuilds.
+-- Item buttons are pooled per occurrence (NOT keyed by mount ID) because the
+-- SimpleArmory data lists some mounts in more than one category.
+local buttonPool, activeButtons = {}, {}
 local categoryPool, activeCategories = {}, {}
 local subcatPool, activeSubcats = {}, {}
 
@@ -138,9 +139,9 @@ local function ItemButton_OnClick(self)
 end
 
 local function AcquireItemButton(parent, entry)
-    local button = itemButtons[entry.item.ID]
+    local button = table.remove(buttonPool)
     if not button then
-        button = CreateFrame("Button", "SC_Item" .. entry.item.ID, parent)
+        button = CreateFrame("Button", nil, parent)
         button:SetSize(ITEM_SIZE, ITEM_SIZE)
         button.icon = button:CreateTexture(nil, "ARTWORK")
         button.icon:SetAllPoints()
@@ -151,10 +152,12 @@ local function AcquireItemButton(parent, entry)
         button:SetScript("OnEnter", ItemButton_OnEnter)
         button:SetScript("OnLeave", function() GameTooltip:Hide() end)
         button:SetScript("OnClick", ItemButton_OnClick)
-        itemButtons[entry.item.ID] = button
     end
+    activeButtons[#activeButtons + 1] = button
 
     button:SetParent(parent)
+    button:ClearAllPoints()
+    button:Show()
     button.item = entry.item
     button.spellID = entry.spellID
     button.icon:SetTexture(entry.icon)
@@ -217,9 +220,12 @@ local function ReleaseAllFrames()
         categoryPool[#categoryPool + 1] = frame
         activeCategories[i] = nil
     end
-    for _, button in pairs(itemButtons) do
+    for i = #activeButtons, 1, -1 do
+        local button = activeButtons[i]
         button:Hide()
         button:ClearAllPoints()
+        buttonPool[#buttonPool + 1] = button
+        activeButtons[i] = nil
     end
 end
 
@@ -283,7 +289,9 @@ function ns.BuildCollection()
             local shown = {}
             for _, item in ipairs(subcat.items or {}) do
                 local _, spellID, icon, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(item.ID)
-                if IsItemShown(item, isCollected, factionTag) then
+                -- Skip mounts the client does not know yet (future patch content);
+                -- they would render as invisible placeholder buttons otherwise
+                if spellID and IsItemShown(item, isCollected, factionTag) then
                     shown[#shown + 1] = { item = item, spellID = spellID, icon = icon, isCollected = isCollected }
                 end
             end
@@ -313,7 +321,6 @@ function ns.BuildCollection()
                     local row = math.floor((index - 1) / MAX_ITEMS_PER_ROW)
                     local button = AcquireItemButton(subcatFrame, entry)
                     button:SetPoint("TOPLEFT", subcatFrame, "TOPLEFT", column * ITEM_SIZE, -(SUBCAT_TITLE_HEIGHT + row * ITEM_SIZE))
-                    button:Show()
                     if entry.isCollected then
                         categoryCollected = categoryCollected + 1
                     end
