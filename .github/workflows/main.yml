@@ -18,6 +18,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          # Tags are needed to compute the next release version
+          fetch-tags: true
 
       - name: Download mounts.json
         run: curl --fail -sL https://raw.githubusercontent.com/kevinclement/SimpleArmory/master/static/data/mounts.json -o mounts.json
@@ -35,10 +38,19 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Determine next version
+        id: version
+        if: steps.diff.outputs.changed == 'true' || inputs.force
+        run: |
+          # Increment the patch number of the latest v1.1.x tag; falls back to 1.1.0
+          latest=$(git tag --list "v1.1.*" --sort=-v:refname | head -n 1)
+          patch="${latest##*.}"
+          echo "version=1.1.$(( ${patch:--1} + 1 ))" >> "$GITHUB_OUTPUT"
+
       - name: Stamp addon version
         if: steps.diff.outputs.changed == 'true' || inputs.force
         run: |
-          sed -i "s/^## Version:.*/## Version: 1.1.${{ github.run_number }}/" SimpleCollection.toc
+          sed -i "s/^## Version:.*/## Version: ${{ steps.version.outputs.version }}/" SimpleCollection.toc
 
       - name: Commit, tag and push
         if: steps.diff.outputs.changed == 'true' || inputs.force
@@ -48,7 +60,7 @@ jobs:
           git add data/data.lua SimpleCollection.toc
           git commit -m "Update mount data from SimpleArmory"
           # Tag AFTER the data commit so CurseForge/Wago package the fresh data
-          git tag v1.1.${{ github.run_number }}
+          git tag v${{ steps.version.outputs.version }}
           git push origin HEAD --tags
 
       - name: Zip addon
@@ -59,6 +71,6 @@ jobs:
         if: steps.diff.outputs.changed == 'true' || inputs.force
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.1.${{ github.run_number }}
-          name: "SimpleCollection v1.1.${{ github.run_number }}"
+          tag_name: v${{ steps.version.outputs.version }}
+          name: "SimpleCollection v${{ steps.version.outputs.version }}"
           files: SimpleCollection.zip
