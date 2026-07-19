@@ -1,62 +1,60 @@
-function CreateFrameSimpleCollection()
-    -- MainFrame
-    SCFrame = CreateFrame("Frame", "SCFrame", UIParent, "SCFrameTemplate");
-    SCFrame.MainWindow:SetVertexColor(0,0,0,0.95)
-    SCFrame.TitleBar:SetVertexColor(0.1,0.1,0.1,0.95)
-    SCFrame:SetSize(1280, 600)
-    SCFrame:SetFrameStrata("HIGH")
-    SCFrame:SetHyperlinksEnabled(true)
-    SCFrame:EnableMouse(true)
-    SCFrame:SetMovable(true)
-    SCFrame:RegisterForDrag("LeftButton")
-	SCFrame:SetScript("OnDragStart", SCFrame.StartMoving)
-	SCFrame:SetScript("OnDragStop", SCFrame.StopMovingOrSizing)
+local addonName, ns = ...
 
-    SCFrame:SetPoint("CENTER", UIParent, "CENTER")
-    --SCFrame:Show()
+-- Create the main window (once). The collection content itself is built in
+-- collection.lua the first time the window is opened.
+function ns.CreateMainFrame()
+    if ns.frame then return end
 
-    -- Close Button for MainFrame
-    SCFrame.close = CreateFrame("Button", "SCCloseButton", SCFrame, "UIPanelCloseButton")
-    SCFrame.close:SetPoint("TOPRIGHT", SCFrame, "TOPRIGHT")
-    SCFrame.close:SetScript("OnClick", function()
-        SCFrame:Hide()
-    end)
+    local frame = CreateFrame("Frame", "SCFrame", UIParent, "SCFrameTemplate")
+    frame.MainWindow:SetVertexColor(0, 0, 0, 0.95)
+    frame.TitleBar:SetVertexColor(0.1, 0.1, 0.1, 0.95)
+    frame:SetSize(1280, 600)
+    frame:SetFrameStrata("HIGH")
+    frame:SetHyperlinksEnabled(true)
+    frame:EnableMouse(true)
+    frame:SetMovable(true)
+    frame:RegisterForDrag("LeftButton")
+    frame:SetScript("OnDragStart", frame.StartMoving)
+    frame:SetScript("OnDragStop", frame.StopMovingOrSizing)
+    frame:SetPoint("CENTER", UIParent, "CENTER")
 
-    -- Title for MainFrame
-	SCFrame.title = SCFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlight");
-	SCFrame.title:SetPoint("CENTER", SCFrame.TitleBar, "CENTER");
-	SCFrame.title:SetText("SimpleCollection");
-	SCFrame.title:SetTextColor(1, 1, 1)
+    frame.close = CreateFrame("Button", "SCCloseButton", frame, "UIPanelCloseButton")
+    frame.close:SetPoint("TOPRIGHT", frame, "TOPRIGHT")
+    frame.close:SetScript("OnClick", function() frame:Hide() end)
 
-    -- ScrollFrame for MainFrame
-    SCFrame.scrollframe = CreateFrame("ScrollFrame", "ANewScrollFrame", SCFrame, "UIPanelScrollFrameTemplate");
-    SCFrame.scrollchild = CreateFrame("Frame");
+    frame.title = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+    frame.title:SetPoint("CENTER", frame.TitleBar, "CENTER")
+    frame.title:SetText(addonName)
+    frame.title:SetTextColor(1, 1, 1)
 
-    local scrollbarName = SCFrame.scrollframe:GetName()
-    SCFrame.scrollbar = _G[scrollbarName.."ScrollBar"];
-    SCFrame.scrollupbutton = _G[scrollbarName.."ScrollBarScrollUpButton"];
-    SCFrame.scrolldownbutton = _G[scrollbarName.."ScrollBarScrollDownButton"];
+    frame.scrollframe = CreateFrame("ScrollFrame", "SCScrollFrame", frame, "UIPanelScrollFrameTemplate")
+    frame.scrollchild = CreateFrame("Frame")
 
-    SCFrame.scrollupbutton:ClearAllPoints();
-    SCFrame.scrollupbutton:SetPoint("TOPRIGHT", SCFrame.scrollframe, "TOPRIGHT", -2, -2);
+    local scrollbarName = frame.scrollframe:GetName()
+    frame.scrollbar = _G[scrollbarName .. "ScrollBar"]
+    frame.scrollupbutton = _G[scrollbarName .. "ScrollBarScrollUpButton"]
+    frame.scrolldownbutton = _G[scrollbarName .. "ScrollBarScrollDownButton"]
 
-    SCFrame.scrolldownbutton:ClearAllPoints();
-    SCFrame.scrolldownbutton:SetPoint("BOTTOMRIGHT", SCFrame.scrollframe, "BOTTOMRIGHT", -2, -15);
+    frame.scrollupbutton:ClearAllPoints()
+    frame.scrollupbutton:SetPoint("TOPRIGHT", frame.scrollframe, "TOPRIGHT", -2, -2)
+    frame.scrolldownbutton:ClearAllPoints()
+    frame.scrolldownbutton:SetPoint("BOTTOMRIGHT", frame.scrollframe, "BOTTOMRIGHT", -2, -15)
+    frame.scrollbar:ClearAllPoints()
+    frame.scrollbar:SetPoint("TOP", frame.scrollupbutton, "BOTTOM")
+    frame.scrollbar:SetPoint("BOTTOM", frame.scrolldownbutton, "TOP")
 
-    SCFrame.scrollbar:ClearAllPoints();
-    SCFrame.scrollbar:SetPoint("TOP", SCFrame.scrollupbutton, "BOTTOM");
-    SCFrame.scrollbar:SetPoint("BOTTOM", SCFrame.scrolldownbutton, "TOP");
+    frame.scrollframe:SetScrollChild(frame.scrollchild)
+    frame.scrollframe:SetPoint("TOPLEFT", frame.MainWindow, "TOPLEFT", 0, -30)
+    frame.scrollframe:SetPoint("BOTTOMRIGHT", frame.MainWindow, "BOTTOMRIGHT", 0, 20)
+    -- Preliminary size; BuildCollection sets the real content height afterwards
+    frame.scrollchild:SetSize(frame.scrollframe:GetWidth(), frame.scrollframe:GetHeight() * 2)
 
-    SCFrame.scrollframe:SetScrollChild(SCFrame.scrollchild);
+    frame.content = CreateFrame("Frame", nil, frame.scrollchild)
+    frame.content:SetAllPoints(frame.scrollchild)
 
-    --SCFrame.scrollframe:SetAllPoints(SCFrame.MainWindow);
-    SCFrame.scrollframe:SetPoint("TOPLEFT", SCFrame.MainWindow, "TOPLEFT", 0, -30);
-    SCFrame.scrollframe:SetPoint("BOTTOMRIGHT", SCFrame.MainWindow, "BOTTOMRIGHT", 0, 20);
-
-    SCFrame.scrollchild:SetSize(SCFrame.scrollframe:GetWidth(), (SCFrame.scrollframe:GetHeight() * 2));
-
-    SCFrame.moduleoptions = CreateFrame("Frame", nil, SCFrame.scrollchild);
-    SCFrame.moduleoptions:SetAllPoints(SCFrame.scrollchild);
-
+    -- Allow closing the window with the Escape key
     tinsert(UISpecialFrames, "SCFrame")
+
+    ns.frame = frame
+    ns.content = frame.content
 end

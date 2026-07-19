@@ -1,15 +1,16 @@
 ## Interface: 120000, 120005, 120007
 ## Title: SimpleCollection
+## Notes: Your mount collection at a glance, grouped like SimpleArmory, with optional Rarity attempt data.
 ## Author: Nostàroi-Antonidas
 ## Version: 1.0
-## AddonCompartmentFunc: SC_OnAddonCompartmentClick
+## IconTexture: Interface\Icons\Ability_Mount_RidingHorse
 ## SavedVariables: SCOptions
+## AddonCompartmentFunc: SC_OnAddonCompartmentClick
+## OptionalDeps: Rarity
 
 data/data.lua
 embeds.xml
 frame.xml
 frames.lua
 collection.lua
-
 core.lua
-

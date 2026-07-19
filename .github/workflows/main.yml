@@ -2,8 +2,13 @@ name: Build data.lua and Release Addon
 
 on:
   schedule:
-    - cron: "0 0 2 * *"   # Läuft am 2. Tag jedes Monats um 00:00 UTC
+    - cron: "0 0 1,15 * *"   # roughly every two weeks (1st and 15th, 00:00 UTC)
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Create a release even if the data is unchanged"
+        type: boolean
+        default: false
 
 jobs:
   build:
@@ -11,40 +16,46 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Download mounts.json
-        run: curl -sL https://raw.githubusercontent.com/kevinclement/SimpleArmory/master/static/data/mounts.json -o mounts.json
+        run: curl --fail -sL https://raw.githubusercontent.com/kevinclement/SimpleArmory/master/static/data/mounts.json -o mounts.json
 
-      - name: Create data.lua
+      # Converting at build time also validates the JSON: the job fails on bad data
+      - name: Convert JSON to Lua table
+        run: python3 tools/json2lua.py mounts.json data/data.lua
+
+      - name: Detect data changes
+        id: diff
         run: |
-          mkdir -p data
-          {
-            echo 'SimpleCollectionData = [['
-            echo '    {'
-            echo '        "id": "xxallxx",'
-            echo '        "name": "AllMounts",'
-            echo '        "all": '
-            cat mounts.json
-            echo '}'
-            echo ']]'
-          } > data/data.lua
+          if git diff --quiet -- data/data.lua; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
-      - name: Commit, Tag and Push
+      - name: Stamp addon version
+        if: steps.diff.outputs.changed == 'true' || inputs.force
+        run: sed -i "s/^## Version:.*/## Version: 1.0.${{ github.run_number }}/" SimpleCollection.toc
+
+      - name: Commit, tag and push
+        if: steps.diff.outputs.changed == 'true' || inputs.force
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/data.lua
-          git commit -m "Update data.lua from mounts.json" || echo "No changes to commit"
+          git add data/data.lua SimpleCollection.toc
+          git commit -m "Update mount data from SimpleArmory"
+          # Tag AFTER the data commit so CurseForge/Wago package the fresh data
           git tag v1.0.${{ github.run_number }}
           git push origin HEAD --tags
 
-      - name: Zip Addon for Release
-        run: |
-          zip -r SimpleCollection.zip . -x ".git/*" -x ".github/*" -x "mounts.json"
+      - name: Zip addon
+        if: steps.diff.outputs.changed == 'true' || inputs.force
+        run: zip -r SimpleCollection.zip . -x ".git/*" -x ".github/*" -x "tools/*" -x "mounts.json"
 
-      - name: Create GitHub Release
+      - name: Create GitHub release
+        if: steps.diff.outputs.changed == 'true' || inputs.force
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v1.0.${{ github.run_number }}
