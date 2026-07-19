@@ -37,7 +37,8 @@ jobs:
 
       - name: Stamp addon version
         if: steps.diff.outputs.changed == 'true' || inputs.force
-        run: sed -i "s/^## Version:.*/## Version: 1.1.${{ github.run_number }}/" SimpleCollection.toc
+        run: |
+          sed -i "s/^## Version:.*/## Version: 1.1.${{ github.run_number }}/" SimpleCollection.toc
 
       - name: Commit, tag and push
         if: steps.diff.outputs.changed == 'true' || inputs.force
