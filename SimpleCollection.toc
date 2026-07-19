@@ -2,7 +2,7 @@
 ## Title: SimpleCollection
 ## Notes: Your mount collection at a glance, grouped like SimpleArmory, with optional Rarity attempt data.
 ## Author: Nostàroi-Antonidas
-## Version: 1.1.0
+## Version: 1.1.36
 ## IconTexture: Interface\Icons\Ability_Mount_RidingHorse
 ## SavedVariables: SCOptions
 ## AddonCompartmentFunc: SC_OnAddonCompartmentClick
