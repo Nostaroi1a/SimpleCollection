@@ -161,28 +161,28 @@ SimpleCollectionData = {
       {
         ["items"] = {
           {
-            ["ID"] = 2580,
-            ["icon"] = "inv_forsakenhorsemount_purple",
-            ["itemId"] = 243596,
-            ["name"] = "Wailing Banshee's Charger",
-            ["spellid"] = 1235819,
+            ["ID"] = 1947,
+            ["icon"] = "inv_motorcyclefelreavermount_fire",
+            ["itemId"] = 211087,
+            ["name"] = "Hateforged Blazecycle",
+            ["spellid"] = 428067,
           },
           {
-            ["ID"] = 2973,
-            ["icon"] = "inv_rocketmount6_blue",
-            ["itemId"] = 273317,
-            ["name"] = "Blackwater X-TREME Firework Rocket",
-            ["spellid"] = 1292102,
+            ["ID"] = 2577,
+            ["icon"] = "inv_chessmount_gold",
+            ["itemId"] = 243591,
+            ["name"] = "Grandmaster's Royal Board",
+            ["spellid"] = 1235803,
           },
           {
-            ["ID"] = 2975,
-            ["icon"] = "inv_rocketmount6_orange",
-            ["itemId"] = 273651,
-            ["name"] = "Bilgewater X-TREME Firework Rocket",
-            ["spellid"] = 1292344,
+            ["ID"] = 2994,
+            ["icon"] = "inv_vulturemount_black",
+            ["itemId"] = 274681,
+            ["name"] = "Badlands Buzzard",
+            ["spellid"] = 1294767,
           },
         },
-        ["name"] = "Trading Post: July",
+        ["name"] = "Trading Post: August",
       },
       {
         ["items"] = {
@@ -267,6 +267,30 @@ SimpleCollectionData = {
           },
         },
         ["name"] = "Midnight: Season 1",
+      },
+      {
+        ["items"] = {
+          {
+            ["ID"] = 2984,
+            ["icon"] = "7853755",
+            ["itemId"] = "274260",
+            ["name"] = "Rabbit'ath",
+            ["spellid"] = 1293456,
+          },
+        },
+        ["name"] = "Blizzard Store",
+      },
+      {
+        ["items"] = {
+          {
+            ["ID"] = 2933,
+            ["icon"] = "inv_cooking_80_choralhoney3",
+            ["itemId"] = 268481,
+            ["name"] = "Magister's Spell Bee",
+            ["spellid"] = 1282471,
+          },
+        },
+        ["name"] = "Decor Duels",
       },
       {
         ["items"] = {
@@ -668,13 +692,6 @@ SimpleCollectionData = {
             ["spellid"] = 1271698,
           },
           {
-            ["ID"] = 2933,
-            ["icon"] = "inv_cooking_80_choralhoney3",
-            ["itemId"] = 268481,
-            ["name"] = "Magister's Spell Bee",
-            ["spellid"] = 1282471,
-          },
-          {
             ["ID"] = 2988,
             ["icon"] = "inv_voidsurfboardmount",
             ["itemId"] = 274649,
@@ -735,6 +752,14 @@ SimpleCollectionData = {
             ["new"] = true,
             ["spellid"] = 1300778,
           },
+          {
+            ["ID"] = 3019,
+            ["icon"] = "inv_venomserpentmount_purple",
+            ["itemId"] = 275653,
+            ["name"] = "Sea-Dwelling Isle Serpent",
+            ["new"] = true,
+            ["spellid"] = 1297216,
+          },
         },
         ["name"] = "Vendor",
       },
@@ -774,6 +799,14 @@ SimpleCollectionData = {
             ["itemId"] = 257446,
             ["name"] = "Insatiable Shredclaw",
             ["spellid"] = 1261583,
+          },
+          {
+            ["ID"] = 2839,
+            ["icon"] = "inv_arcanegolem2mount_green",
+            ["itemId"] = 262496,
+            ["name"] = "Delver's Arcane Golem",
+            ["new"] = true,
+            ["spellid"] = 1268919,
           },
         },
         ["name"] = "Treasure",
@@ -4794,13 +4827,6 @@ SimpleCollectionData = {
         ["id"] = "a8e200df",
         ["items"] = {
           {
-            ["ID"] = 800,
-            ["icon"] = "inv_fishmount",
-            ["itemId"] = 138811,
-            ["name"] = "Brinedeep Bottom-Feeder",
-            ["spellid"] = 214791,
-          },
-          {
             ["ID"] = 847,
             ["icon"] = "inv_turtlemount",
             ["itemId"] = 141713,
@@ -4895,6 +4921,13 @@ SimpleCollectionData = {
       {
         ["id"] = "82bf985b",
         ["items"] = {
+          {
+            ["ID"] = 800,
+            ["icon"] = "inv_fishmount",
+            ["itemId"] = 138811,
+            ["name"] = "Brinedeep Bottom-Feeder",
+            ["spellid"] = 214791,
+          },
           {
             ["ID"] = 965,
             ["icon"] = "inv_argustalbukmount_blue",
@@ -5387,6 +5420,13 @@ SimpleCollectionData = {
             ["name"] = "Witherhide Cliffstomper",
             ["spellid"] = 171616,
           },
+          {
+            ["ID"] = 632,
+            ["icon"] = "inv_hippo_green",
+            ["itemId"] = 116768,
+            ["name"] = "Mosshide Riverwallow",
+            ["spellid"] = 171825,
+          },
         },
         ["name"] = "Vendor",
       },
@@ -5422,13 +5462,6 @@ SimpleCollectionData = {
             ["itemId"] = 116672,
             ["name"] = "Domesticated Razorback",
             ["spellid"] = 171634,
-          },
-          {
-            ["ID"] = 632,
-            ["icon"] = "inv_hippo_green",
-            ["itemId"] = 116768,
-            ["name"] = "Mosshide Riverwallow",
-            ["spellid"] = 171825,
           },
           {
             ["ID"] = 624,
@@ -9395,6 +9428,7 @@ SimpleCollectionData = {
             ["itemId"] = 275433,
             ["name"] = "Vicious Lightbloom Boar",
             ["new"] = true,
+            ["side"] = "A",
             ["spellid"] = 1296670,
           },
           {
@@ -9403,6 +9437,7 @@ SimpleCollectionData = {
             ["itemId"] = 275432,
             ["name"] = "Vicious Lightbloom Boar",
             ["new"] = true,
+            ["side"] = "H",
             ["spellid"] = 1296672,
           },
         },
@@ -9745,7 +9780,7 @@ SimpleCollectionData = {
             ["icon"] = "inv_kaijugladiatormount_green",
             ["itemId"] = 275302,
             ["name"] = "Venomous Gladiator's Goredrake",
-            ["new"] = true,
+            ["notObtainable"] = true,
             ["spellid"] = 1266211,
           },
         },
@@ -10200,6 +10235,14 @@ SimpleCollectionData = {
             ["spellid"] = 1261681,
           },
           {
+            ["ID"] = 2806,
+            ["highlighted"] = true,
+            ["icon"] = "inv_protodragonicemount",
+            ["itemId"] = 258884,
+            ["name"] = "Spawn of Vyranoth",
+            ["spellid"] = 1264184,
+          },
+          {
             ["ID"] = 781,
             ["icon"] = "inv_infinitedragonmount",
             ["itemId"] = 133543,
@@ -10360,6 +10403,14 @@ SimpleCollectionData = {
             ["itemId"] = 212228,
             ["name"] = "Soaring Sky Fox",
             ["spellid"] = 431359,
+          },
+          {
+            ["ID"] = 1947,
+            ["highlighted"] = true,
+            ["icon"] = "inv_motorcyclefelreavermount_fire",
+            ["itemId"] = 211087,
+            ["name"] = "Hateforged Blazecycle",
+            ["spellid"] = 428067,
           },
         },
         ["name"] = "Trading Post Re-Releases",
@@ -10649,7 +10700,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2580,
-            ["highlighted"] = true,
             ["icon"] = "inv_forsakenhorsemount_purple",
             ["itemId"] = 243596,
             ["name"] = "Wailing Banshee's Charger",
@@ -10671,6 +10721,7 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2577,
+            ["highlighted"] = true,
             ["icon"] = "inv_chessmount_gold",
             ["itemId"] = 243591,
             ["name"] = "Grandmaster's Royal Board",
@@ -10811,7 +10862,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2973,
-            ["highlighted"] = true,
             ["icon"] = "inv_rocketmount6_blue",
             ["itemId"] = 273317,
             ["name"] = "Blackwater X-TREME Firework Rocket",
@@ -10819,11 +10869,18 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2975,
-            ["highlighted"] = true,
             ["icon"] = "inv_rocketmount6_orange",
             ["itemId"] = 273651,
             ["name"] = "Bilgewater X-TREME Firework Rocket",
             ["spellid"] = 1292344,
+          },
+          {
+            ["ID"] = 2994,
+            ["highlighted"] = true,
+            ["icon"] = "inv_vulturemount_black",
+            ["itemId"] = 274681,
+            ["name"] = "Badlands Buzzard",
+            ["spellid"] = 1294767,
           },
           {
             ["ID"] = 799,
@@ -11194,15 +11251,6 @@ SimpleCollectionData = {
             ["spellid"] = 1294677,
           },
           {
-            ["ID"] = 2994,
-            ["icon"] = "inv_vulturemount_black",
-            ["itemId"] = 274681,
-            ["name"] = "Badlands Buzzard",
-            ["notObtainable"] = true,
-            ["notReleased"] = true,
-            ["spellid"] = 1294767,
-          },
-          {
             ["ID"] = 2652,
             ["icon"] = "inv_soulhoundmount_green",
             ["itemId"] = 250191,
@@ -11307,6 +11355,19 @@ SimpleCollectionData = {
           },
         },
         ["name"] = "Dastardly Duos",
+      },
+      {
+        ["items"] = {
+          {
+            ["ID"] = 2933,
+            ["highlighted"] = true,
+            ["icon"] = "inv_cooking_80_choralhoney3",
+            ["itemId"] = 268481,
+            ["name"] = "Magister's Spell Bee",
+            ["spellid"] = 1282471,
+          },
+        },
+        ["name"] = "Decor Duels",
       },
       {
         ["items"] = {
@@ -12397,6 +12458,14 @@ SimpleCollectionData = {
             ["resale"] = true,
             ["spellid"] = 358072,
           },
+          {
+            ["ID"] = 2984,
+            ["highlighted"] = true,
+            ["icon"] = "7853755",
+            ["itemId"] = "274260",
+            ["name"] = "Rabbit'ath",
+            ["spellid"] = 1293456,
+          },
         },
         ["name"] = "Blizzcon",
       },
@@ -12657,19 +12726,6 @@ SimpleCollectionData = {
           },
         },
         ["name"] = "Diablo IV",
-      },
-      {
-        ["items"] = {
-          {
-            ["ID"] = 1947,
-            ["icon"] = "inv_motorcyclefelreavermount_fire",
-            ["itemId"] = 211087,
-            ["name"] = "Hateforged Blazecycle",
-            ["resale"] = true,
-            ["spellid"] = 428067,
-          },
-        },
-        ["name"] = "Mountain Dew",
       },
       {
         ["items"] = {
