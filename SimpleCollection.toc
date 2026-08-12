@@ -1,4 +1,4 @@
-## Interface: 120000, 120005, 120007
+## Interface: 120000, 120005, 120007, 120100
 ## Title: SimpleCollection
 ## Notes: Your mount collection at a glance, grouped like SimpleArmory, with optional Rarity attempt data.
 ## Author: Nostàroi-Antonidas
