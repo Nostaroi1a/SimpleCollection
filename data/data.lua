@@ -161,6 +161,19 @@ SimpleCollectionData = {
       {
         ["items"] = {
           {
+            ["ID"] = 2850,
+            ["icon"] = "inv_flyingcarpetmount4",
+            ["itemId"] = 263449,
+            ["name"] = "Fluffy Comfy Flying Quilt",
+            ["spellid"] = 1270520,
+          },
+        },
+        ["name"] = "Twitch Drops",
+        ["info"] = "This mount is available as a Twitch Drop for a limited time and will likely not return again. \n Ending: September 27th",
+      },
+      {
+        ["items"] = {
+          {
             ["ID"] = 2628,
             ["icon"] = "inv_dwarfgryphonmount_orange",
             ["itemId"] = 247793,
@@ -173,13 +186,6 @@ SimpleCollectionData = {
             ["itemId"] = 247795,
             ["name"] = "Ornery Breezestrider",
             ["spellid"] = 1245370,
-          },
-          {
-            ["ID"] = 3102,
-            ["icon"] = "8028501",
-            ["itemId"] = 278573,
-            ["name"] = "Crested Ember Leafmimic",
-            ["spellid"] = 1305204,
           },
           {
             ["ID"] = 3104,
@@ -195,8 +201,16 @@ SimpleCollectionData = {
             ["name"] = "Crested Aqua Leafmimic",
             ["spellid"] = 1305206,
           },
+          {
+            ["ID"] = 3102,
+            ["icon"] = "8028501",
+            ["itemId"] = 278573,
+            ["name"] = "Crested Ember Leafmimic",
+            ["spellid"] = 1305204,
+          },
         },
         ["name"] = "Trading Post: September",
+        ["info"] = "These mounts are currently available on the Trading Post and may return in future rotations. \n\n Ending: September 30th",
       },
       {
         ["items"] = {
@@ -434,13 +448,6 @@ SimpleCollectionData = {
             ["spellid"] = 171847,
           },
           {
-            ["ID"] = 593,
-            ["icon"] = "ability_mount_clockworkhorse",
-            ["itemId"] = 112326,
-            ["name"] = "Warforged Nightmare",
-            ["spellid"] = 163024,
-          },
-          {
             ["ID"] = 1051,
             ["icon"] = "inv_skiff",
             ["itemId"] = 160589,
@@ -472,6 +479,7 @@ SimpleCollectionData = {
           },
         },
         ["name"] = "Trading Post Celebration",
+        ["info"] = "These mounts are currently available on the Trading Post Celebration Vendors and may return in future rotations. \n\n Ending: September 30th",
       },
       {
         ["items"] = {
@@ -512,16 +520,9 @@ SimpleCollectionData = {
             ["side"] = "H",
             ["spellid"] = 1296672,
           },
-          {
-            ["ID"] = 2821,
-            ["icon"] = "inv_kaijugladiatormount_green",
-            ["itemId"] = 275302,
-            ["name"] = "Venomous Gladiator's Goredrake",
-            ["notObtainable"] = true,
-            ["spellid"] = 1266211,
-          },
         },
         ["name"] = "Midnight: Season 2",
+        ["info"] = "These mounts will be available through a different or more difficult source in the future. \n\n Ending: Midnight, Patch 12.2",
       },
       {
         ["items"] = {
@@ -534,6 +535,7 @@ SimpleCollectionData = {
           },
         },
         ["name"] = "Blizzard Store",
+        ["info"] = "This mount is only available on the store for a limited time and will likely not return again. \n\n Ending: \n Rabbit'ath: September 28th 2026",
       },
     },
   },
@@ -698,8 +700,16 @@ SimpleCollectionData = {
             ["name"] = "Apophic Soul Crusher",
             ["spellid"] = 1297404,
           },
+          {
+            ["ID"] = 3144,
+            ["icon"] = "8269989",
+            ["itemId"] = 283363,
+            ["name"] = "Loa-Blessed Wayfarer",
+            ["new"] = true,
+            ["spellid"] = 1314715,
+          },
         },
-        ["name"] = "Delve Nemesis Drop",
+        ["name"] = "Nemesis Drop",
       },
       {
         ["items"] = {
@@ -985,6 +995,14 @@ SimpleCollectionData = {
             ["name"] = "Corroded Soul Crusher",
             ["spellid"] = 1298808,
           },
+          {
+            ["ID"] = 3137,
+            ["icon"] = "8262534",
+            ["itemId"] = 282414,
+            ["name"] = "Sporebearer Fungal Strider",
+            ["new"] = true,
+            ["spellid"] = 1313788,
+          },
         },
         ["name"] = "Vendor",
       },
@@ -1147,6 +1165,19 @@ SimpleCollectionData = {
           },
         },
         ["name"] = "Ritual Sites",
+      },
+      {
+        ["items"] = {
+          {
+            ["ID"] = 3066,
+            ["icon"] = "8014728",
+            ["itemId"] = 276926,
+            ["name"] = "Corrupted Swarmer",
+            ["new"] = true,
+            ["spellid"] = 1301331,
+          },
+        },
+        ["name"] = "Aqir Invasions",
       },
       {
         ["items"] = {
@@ -10018,7 +10049,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2821,
-            ["highlighted"] = true,
             ["icon"] = "inv_kaijugladiatormount_green",
             ["itemId"] = 275302,
             ["name"] = "Venomous Gladiator's Goredrake",
@@ -10520,7 +10550,7 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1798,
-            ["icon"] = "5260432",
+            ["icon"] = "inv_encrypted13_blue",
             ["itemId"] = 208572,
             ["name"] = "Azure Worldchiller",
             ["spellid"] = 420097,
@@ -11385,7 +11415,7 @@ SimpleCollectionData = {
             ["ID"] = 2649,
             ["icon"] = "inv_tuskarrmoosemount_green",
             ["itemId"] = 250105,
-            ["name"] = "Sharktested Crest-Horn",
+            ["name"] = "Whaletested Crest-Horn",
             ["notObtainable"] = true,
             ["notReleased"] = true,
             ["spellid"] = 1250285,
@@ -11412,7 +11442,7 @@ SimpleCollectionData = {
             ["ID"] = 2698,
             ["icon"] = "inv_turkeymount_purple",
             ["itemId"] = 250928,
-            ["name"] = "Murky Turkey",
+            ["name"] = "Aubergine Warturkey",
             ["notObtainable"] = true,
             ["notReleased"] = true,
             ["spellid"] = 1251689,
@@ -11470,15 +11500,6 @@ SimpleCollectionData = {
             ["notObtainable"] = true,
             ["notReleased"] = true,
             ["spellid"] = 1269280,
-          },
-          {
-            ["ID"] = 2850,
-            ["icon"] = "inv_flyingcarpetmount4",
-            ["itemId"] = 263449,
-            ["name"] = "Fluffy Comfy Flying Quilt",
-            ["notObtainable"] = true,
-            ["notReleased"] = true,
-            ["spellid"] = 1270520,
           },
           {
             ["ID"] = 2851,
@@ -11568,6 +11589,42 @@ SimpleCollectionData = {
             ["notObtainable"] = true,
             ["notReleased"] = true,
             ["spellid"] = 1305209,
+          },
+          {
+            ["ID"] = 3138,
+            ["icon"] = "8270412",
+            ["itemId"] = 282646,
+            ["name"] = "Hot Motocross Bunmover 4000",
+            ["notObtainable"] = true,
+            ["notReleased"] = true,
+            ["spellid"] = 1314165,
+          },
+          {
+            ["ID"] = 3139,
+            ["icon"] = "8270411",
+            ["itemId"] = 282647,
+            ["name"] = "Hot Motocross Bunmover 4200",
+            ["notObtainable"] = true,
+            ["notReleased"] = true,
+            ["spellid"] = 1314166,
+          },
+          {
+            ["ID"] = 3141,
+            ["icon"] = "8270410",
+            ["itemId"] = 282648,
+            ["name"] = "Hot Motocross Bunmover 4400",
+            ["notObtainable"] = true,
+            ["notReleased"] = true,
+            ["spellid"] = 1314168,
+          },
+          {
+            ["ID"] = 3142,
+            ["icon"] = "8270409",
+            ["itemId"] = 282649,
+            ["name"] = "Hot Motocross Bunmover 4600",
+            ["notObtainable"] = true,
+            ["notReleased"] = true,
+            ["spellid"] = 1314169,
           },
         },
         ["name"] = "Trading Post Originals",
@@ -13338,6 +13395,14 @@ SimpleCollectionData = {
             ["notObtainable"] = true,
             ["spellid"] = 449142,
           },
+          {
+            ["ID"] = 2850,
+            ["highlighted"] = true,
+            ["icon"] = "inv_flyingcarpetmount4",
+            ["itemId"] = 263449,
+            ["name"] = "Fluffy Comfy Flying Quilt",
+            ["spellid"] = 1270520,
+          },
         },
         ["name"] = "Twitch Drops",
       },
@@ -13997,7 +14062,7 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2949,
-            ["icon"] = "7669035",
+            ["icon"] = "inv_shawolfmount",
             ["itemId"] = 269012,
             ["name"] = "Sha-Warped Riding Wolf",
             ["notObtainable"] = true,
@@ -14006,7 +14071,7 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2951,
-            ["icon"] = "7658809",
+            ["icon"] = "inv_shaowlmount",
             ["itemId"] = 269640,
             ["name"] = "Sha-Warped Owl",
             ["notObtainable"] = true,
@@ -14113,7 +14178,7 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2972,
-            ["icon"] = "7833729",
+            ["icon"] = "inv_springpandamount",
             ["itemId"] = 272920,
             ["name"] = "Spring Panda",
             ["notObtainable"] = true,
@@ -14128,6 +14193,15 @@ SimpleCollectionData = {
             ["notObtainable"] = true,
             ["notReleased"] = true,
             ["spellid"] = 1293028,
+          },
+          {
+            ["ID"] = 3034,
+            ["icon"] = "inv_cauldrondrustvarmount",
+            ["itemId"] = 275756,
+            ["name"] = "Living Heartsbane Cauldron",
+            ["notObtainable"] = true,
+            ["notReleased"] = true,
+            ["spellid"] = 1297808,
           },
         },
         ["name"] = "Unknown",
