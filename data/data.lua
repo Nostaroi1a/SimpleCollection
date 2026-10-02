@@ -159,329 +159,34 @@ SimpleCollectionData = {
     ["name"] = "Limited Time",
     ["subcats"] = {
       {
+        ["info"] = "These mounts are currently available on the Trading Post and may return in future rotations. \n\n Ending: October 31st",
         ["items"] = {
           {
-            ["ID"] = 2850,
-            ["icon"] = "inv_flyingcarpetmount4",
-            ["itemId"] = 263449,
-            ["name"] = "Fluffy Comfy Flying Quilt",
-            ["spellid"] = 1270520,
+            ["ID"] = 532,
+            ["icon"] = "inv_ghostlycharger",
+            ["itemId"] = 93671,
+            ["name"] = "Ghastly Charger",
+            ["spellid"] = 136505,
+          },
+          {
+            ["ID"] = 2625,
+            ["icon"] = "inv_headlesshorsemanmount2_white",
+            ["itemId"] = 247723,
+            ["name"] = "The Headless Horseman's Hallowed Charger",
+            ["spellid"] = 1245205,
+          },
+          {
+            ["ID"] = 2652,
+            ["icon"] = "inv_soulhoundmount_green",
+            ["itemId"] = 250191,
+            ["name"] = "Bilebound Ur'zul",
+            ["spellid"] = 1250481,
           },
         },
-        ["name"] = "Twitch Drops",
-        ["info"] = "This mount is available as a Twitch Drop for a limited time and will likely not return again. \n Ending: September 27th",
+        ["name"] = "Trading Post: October",
       },
       {
-        ["items"] = {
-          {
-            ["ID"] = 2628,
-            ["icon"] = "inv_dwarfgryphonmount_orange",
-            ["itemId"] = 247793,
-            ["name"] = "Cinder-Plumed Highland Gryphon",
-            ["spellid"] = 1245359,
-          },
-          {
-            ["ID"] = 2630,
-            ["icon"] = "inv_argustalbukmount_yellow",
-            ["itemId"] = 247795,
-            ["name"] = "Ornery Breezestrider",
-            ["spellid"] = 1245370,
-          },
-          {
-            ["ID"] = 3104,
-            ["icon"] = "8028503",
-            ["itemId"] = 278575,
-            ["name"] = "Crested Verdant Leafmimic",
-            ["spellid"] = 1305207,
-          },
-          {
-            ["ID"] = 3103,
-            ["icon"] = "8028502",
-            ["itemId"] = 278574,
-            ["name"] = "Crested Aqua Leafmimic",
-            ["spellid"] = 1305206,
-          },
-          {
-            ["ID"] = 3102,
-            ["icon"] = "8028501",
-            ["itemId"] = 278573,
-            ["name"] = "Crested Ember Leafmimic",
-            ["spellid"] = 1305204,
-          },
-        },
-        ["name"] = "Trading Post: September",
-        ["info"] = "These mounts are currently available on the Trading Post and may return in future rotations. \n\n Ending: September 30th",
-      },
-      {
-        ["items"] = {
-          {
-            ["ID"] = 1577,
-            ["icon"] = "ability_nightsaber2mountsunmoon",
-            ["itemId"] = 190231,
-            ["name"] = "Ash'adar, Harbinger of Dawn",
-            ["spellid"] = 366962,
-          },
-          {
-            ["ID"] = 1573,
-            ["icon"] = "inv_pandarenserpentmount_purple",
-            ["itemId"] = 189978,
-            ["name"] = "Magenta Cloud Serpent",
-            ["spellid"] = 366647,
-          },
-          {
-            ["ID"] = 1582,
-            ["icon"] = "inv_turtlemount2_01",
-            ["itemId"] = 190613,
-            ["name"] = "Savage Green Battle Turtle",
-            ["spellid"] = 367826,
-          },
-          {
-            ["ID"] = 1575,
-            ["icon"] = "inv_parrotmount_purple",
-            ["itemId"] = 190169,
-            ["name"] = "Quawks",
-            ["spellid"] = 366790,
-          },
-          {
-            ["ID"] = 1784,
-            ["icon"] = "inv_aqirflyingmount_yellow",
-            ["itemId"] = 206976,
-            ["name"] = "Royal Swarmer",
-            ["spellid"] = 414986,
-          },
-          {
-            ["ID"] = 1742,
-            ["icon"] = "ability_mount_hordescorpiongreen",
-            ["itemId"] = 206027,
-            ["name"] = "Felcrystal Scorpion",
-            ["spellid"] = 411565,
-          },
-          {
-            ["ID"] = 1785,
-            ["icon"] = "inv_clefthoofdraenormount_purple",
-            ["itemId"] = 207821,
-            ["name"] = "Ancestral Clefthoof",
-            ["spellid"] = 417245,
-          },
-          {
-            ["ID"] = 646,
-            ["icon"] = "inv_infernalmountblue",
-            ["itemId"] = 137576,
-            ["name"] = "Coldflame Infernal",
-            ["spellid"] = 171840,
-          },
-          {
-            ["ID"] = 1942,
-            ["icon"] = "inv_scarabmount_copper",
-            ["itemId"] = 211074,
-            ["name"] = "Jeweled Copper Scarab",
-            ["spellid"] = 428005,
-          },
-          {
-            ["ID"] = 1799,
-            ["icon"] = "inv_broommount2_red",
-            ["itemId"] = 208598,
-            ["name"] = "Eve's Ghastly Rider",
-            ["spellid"] = 419345,
-          },
-          {
-            ["ID"] = 1841,
-            ["icon"] = "inv_fox2_darkred",
-            ["itemId"] = 210919,
-            ["name"] = "Crimson Glimmerfur",
-            ["spellid"] = 427435,
-          },
-          {
-            ["ID"] = 1550,
-            ["icon"] = "ability_mount_progenitorjellyfish_dark",
-            ["itemId"] = 187674,
-            ["name"] = "Depthstalker",
-            ["spellid"] = 359380,
-          },
-          {
-            ["ID"] = 1586,
-            ["icon"] = "inv_pterrordax2mount_gold",
-            ["itemId"] = 190767,
-            ["name"] = "Armored Golden Pterrordax",
-            ["spellid"] = 368126,
-          },
-          {
-            ["ID"] = 1956,
-            ["icon"] = "inv_lovefoxmount_pink",
-            ["itemId"] = 212227,
-            ["name"] = "Fur-endship Fox",
-            ["spellid"] = 431357,
-          },
-          {
-            ["ID"] = 2035,
-            ["icon"] = "inv_peacockmount_blue",
-            ["itemId"] = 212630,
-            ["name"] = "Majestic Azure Peafowl",
-            ["spellid"] = 432558,
-          },
-          {
-            ["ID"] = 2039,
-            ["icon"] = "inv_turtlemount2_01",
-            ["itemId"] = 212920,
-            ["name"] = "Savage Blue Battle Turtle",
-            ["spellid"] = 433281,
-          },
-          {
-            ["ID"] = 1468,
-            ["icon"] = "inv_primaldragonflymount_orange",
-            ["itemId"] = 192766,
-            ["name"] = "Amber Skitterfly",
-            ["spellid"] = 349943,
-          },
-          {
-            ["ID"] = 2152,
-            ["icon"] = "inv_goblinsurfboardmount_white",
-            ["itemId"] = 221814,
-            ["name"] = "Pearlescent Goblin Wave Shredder",
-            ["spellid"] = 447413,
-          },
-          {
-            ["ID"] = 2189,
-            ["icon"] = "inv_oldgodfishmount_purple",
-            ["itemId"] = 223285,
-            ["name"] = "Underlight Corrupted Behemoth",
-            ["spellid"] = 448851,
-          },
-          {
-            ["ID"] = 2201,
-            ["icon"] = "inv_alliancewolfmount2_white",
-            ["itemId"] = 223469,
-            ["name"] = "Sentinel War Wolf",
-            ["spellid"] = 449140,
-          },
-          {
-            ["ID"] = 2198,
-            ["icon"] = "inv_nightsaberhordemount_red",
-            ["itemId"] = 223449,
-            ["name"] = "Kor'kron Warsaber",
-            ["spellid"] = 449126,
-          },
-          {
-            ["ID"] = 2238,
-            ["icon"] = "inv_treasurebasiliskmount_tan",
-            ["itemId"] = 226040,
-            ["name"] = "Plunderlord's Golden Crocolisk",
-            ["spellid"] = 457650,
-          },
-          {
-            ["ID"] = 2239,
-            ["icon"] = "inv_treasurebasiliskmount_green",
-            ["itemId"] = 226041,
-            ["name"] = "Keg Leg's Radiant Crocolisk",
-            ["spellid"] = 457654,
-          },
-          {
-            ["ID"] = 2249,
-            ["icon"] = "inv_mawguardhandmountwhite",
-            ["itemId"] = 226506,
-            ["name"] = "Hand of Reshkigaal",
-            ["spellid"] = 459193,
-          },
-          {
-            ["ID"] = 1574,
-            ["icon"] = "inv_crabmount_blue",
-            ["itemId"] = 190168,
-            ["name"] = "Crusty Crawler",
-            ["spellid"] = 366789,
-          },
-          {
-            ["ID"] = 224,
-            ["icon"] = "ability_mount_charger",
-            ["itemId"] = 37719,
-            ["name"] = "Swift Zhevra",
-            ["spellid"] = 49322,
-          },
-          {
-            ["ID"] = 376,
-            ["icon"] = "ability_mount_celestialhorse",
-            ["itemId"] = 54811,
-            ["name"] = "Celestial Steed",
-            ["spellid"] = 75614,
-          },
-          {
-            ["ID"] = 382,
-            ["icon"] = "ability_mount_rocketmount2",
-            ["itemId"] = 54860,
-            ["name"] = "X-53 Touring Rocket",
-            ["spellid"] = 75973,
-          },
-          {
-            ["ID"] = 371,
-            ["icon"] = "ability_mount_warhippogryph",
-            ["itemId"] = 54069,
-            ["name"] = "Blazing Hippogryph",
-            ["spellid"] = 74856,
-          },
-          {
-            ["ID"] = 441,
-            ["icon"] = "ability_mount_spectralwyvern",
-            ["itemId"] = 76902,
-            ["name"] = "Spectral Wind Rider",
-            ["side"] = "H",
-            ["spellid"] = 107517,
-          },
-          {
-            ["ID"] = 440,
-            ["icon"] = "ability_mount_spectralgryphon",
-            ["itemId"] = 76889,
-            ["name"] = "Spectral Gryphon",
-            ["side"] = "A",
-            ["spellid"] = 107516,
-          },
-          {
-            ["ID"] = 439,
-            ["icon"] = "ability_mount_tyraelmount",
-            ["itemId"] = 76755,
-            ["name"] = "Tyrael's Charger",
-            ["spellid"] = 107203,
-          },
-          {
-            ["ID"] = 454,
-            ["icon"] = "inv_lavahorse",
-            ["itemId"] = 118515,
-            ["name"] = "Cindermane Charger",
-            ["spellid"] = 171847,
-          },
-          {
-            ["ID"] = 1051,
-            ["icon"] = "inv_skiff",
-            ["itemId"] = 160589,
-            ["name"] = "The Dreadwake",
-            ["spellid"] = 272770,
-          },
-          {
-            ["ID"] = 1266,
-            ["icon"] = "inv_encrypted21",
-            ["itemId"] = 207964,
-            ["name"] = "Alabaster Stormtalon",
-            ["side"] = "A",
-            ["spellid"] = 302361,
-          },
-          {
-            ["ID"] = 1267,
-            ["icon"] = "inv_encrypted22",
-            ["itemId"] = 207963,
-            ["name"] = "Alabaster Thunderwing",
-            ["side"] = "H",
-            ["spellid"] = 302362,
-          },
-          {
-            ["ID"] = 1958,
-            ["icon"] = "inv_lovefoxmount_purple",
-            ["itemId"] = 212229,
-            ["name"] = "Twilight Sky Prowler",
-            ["spellid"] = 431360,
-          },
-        },
-        ["name"] = "Trading Post Celebration",
-        ["info"] = "These mounts are currently available on the Trading Post Celebration Vendors and may return in future rotations. \n\n Ending: September 30th",
-      },
-      {
+        ["info"] = "These mounts will be available through a different or more difficult source in the future. \n\n Ending: Midnight, Patch 12.2",
         ["items"] = {
           {
             ["ID"] = 3063,
@@ -522,20 +227,6 @@ SimpleCollectionData = {
           },
         },
         ["name"] = "Midnight: Season 2",
-        ["info"] = "These mounts will be available through a different or more difficult source in the future. \n\n Ending: Midnight, Patch 12.2",
-      },
-      {
-        ["items"] = {
-          {
-            ["ID"] = 2984,
-            ["icon"] = "inv_rabbitmountvoid",
-            ["itemId"] = 274260,
-            ["name"] = "Rabbit'ath",
-            ["spellid"] = 1293456,
-          },
-        },
-        ["name"] = "Blizzard Store",
-        ["info"] = "This mount is only available on the store for a limited time and will likely not return again. \n\n Ending: \n Rabbit'ath: September 28th 2026",
       },
     },
   },
@@ -658,6 +349,7 @@ SimpleCollectionData = {
         ["name"] = "Raid Drop",
       },
       {
+        ["info"] = "Some of these mounts are not currently obtainable due to the seasonal dungeon rotation. \n\n Obtainable again:\n Spectral Hawkstrider: The Last Titan \n Lucent Hawkstrider: Midnight Season 3",
         ["items"] = {
           {
             ["ID"] = 2805,
@@ -1003,6 +695,14 @@ SimpleCollectionData = {
             ["new"] = true,
             ["spellid"] = 1313788,
           },
+          {
+            ["ID"] = 3066,
+            ["icon"] = "8014728",
+            ["itemId"] = 276926,
+            ["name"] = "Corrupted Swarmer",
+            ["new"] = true,
+            ["spellid"] = 1301331,
+          },
         },
         ["name"] = "Vendor",
       },
@@ -1165,19 +865,6 @@ SimpleCollectionData = {
           },
         },
         ["name"] = "Ritual Sites",
-      },
-      {
-        ["items"] = {
-          {
-            ["ID"] = 3066,
-            ["icon"] = "8014728",
-            ["itemId"] = 276926,
-            ["name"] = "Corrupted Swarmer",
-            ["new"] = true,
-            ["spellid"] = 1301331,
-          },
-        },
-        ["name"] = "Aqir Invasions",
       },
       {
         ["items"] = {
@@ -10575,7 +10262,6 @@ SimpleCollectionData = {
         ["items"] = {
           {
             ["ID"] = 224,
-            ["highlighted"] = true,
             ["icon"] = "ability_mount_charger",
             ["itemId"] = 37719,
             ["name"] = "Swift Zhevra",
@@ -10583,7 +10269,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 376,
-            ["highlighted"] = true,
             ["icon"] = "ability_mount_celestialhorse",
             ["itemId"] = 54811,
             ["name"] = "Celestial Steed",
@@ -10591,7 +10276,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 382,
-            ["highlighted"] = true,
             ["icon"] = "ability_mount_rocketmount2",
             ["itemId"] = 54860,
             ["name"] = "X-53 Touring Rocket",
@@ -10599,15 +10283,21 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 371,
-            ["highlighted"] = true,
             ["icon"] = "ability_mount_warhippogryph",
             ["itemId"] = 54069,
             ["name"] = "Blazing Hippogryph",
             ["spellid"] = 74856,
           },
           {
-            ["ID"] = 441,
+            ["ID"] = 532,
             ["highlighted"] = true,
+            ["icon"] = "inv_ghostlycharger",
+            ["itemId"] = 93671,
+            ["name"] = "Ghastly Charger",
+            ["spellid"] = 136505,
+          },
+          {
+            ["ID"] = 441,
             ["icon"] = "ability_mount_spectralwyvern",
             ["itemId"] = 76902,
             ["name"] = "Spectral Wind Rider",
@@ -10616,7 +10306,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 440,
-            ["highlighted"] = true,
             ["icon"] = "ability_mount_spectralgryphon",
             ["itemId"] = 76889,
             ["name"] = "Spectral Gryphon",
@@ -10625,7 +10314,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 439,
-            ["highlighted"] = true,
             ["icon"] = "ability_mount_tyraelmount",
             ["itemId"] = 76755,
             ["name"] = "Tyrael's Charger",
@@ -10633,7 +10321,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 454,
-            ["highlighted"] = true,
             ["icon"] = "inv_lavahorse",
             ["itemId"] = 118515,
             ["name"] = "Cindermane Charger",
@@ -10648,7 +10335,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1051,
-            ["highlighted"] = true,
             ["icon"] = "inv_skiff",
             ["itemId"] = 160589,
             ["name"] = "The Dreadwake",
@@ -10656,7 +10342,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1266,
-            ["highlighted"] = true,
             ["icon"] = "inv_encrypted21",
             ["itemId"] = 207964,
             ["name"] = "Alabaster Stormtalon",
@@ -10665,7 +10350,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1267,
-            ["highlighted"] = true,
             ["icon"] = "inv_encrypted22",
             ["itemId"] = 207963,
             ["name"] = "Alabaster Thunderwing",
@@ -10674,7 +10358,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1958,
-            ["highlighted"] = true,
             ["icon"] = "inv_lovefoxmount_purple",
             ["itemId"] = 212229,
             ["name"] = "Twilight Sky Prowler",
@@ -10702,7 +10385,6 @@ SimpleCollectionData = {
         ["items"] = {
           {
             ["ID"] = 1577,
-            ["highlighted"] = true,
             ["icon"] = "ability_nightsaber2mountsunmoon",
             ["itemId"] = 190231,
             ["name"] = "Ash'adar, Harbinger of Dawn",
@@ -10710,7 +10392,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1573,
-            ["highlighted"] = true,
             ["icon"] = "inv_pandarenserpentmount_purple",
             ["itemId"] = 189978,
             ["name"] = "Magenta Cloud Serpent",
@@ -10718,7 +10399,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1582,
-            ["highlighted"] = true,
             ["icon"] = "inv_turtlemount2_01",
             ["itemId"] = 190613,
             ["name"] = "Savage Green Battle Turtle",
@@ -10726,7 +10406,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1575,
-            ["highlighted"] = true,
             ["icon"] = "inv_parrotmount_purple",
             ["itemId"] = 190169,
             ["name"] = "Quawks",
@@ -10734,7 +10413,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1784,
-            ["highlighted"] = true,
             ["icon"] = "inv_aqirflyingmount_yellow",
             ["itemId"] = 206976,
             ["name"] = "Royal Swarmer",
@@ -10742,7 +10420,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1742,
-            ["highlighted"] = true,
             ["icon"] = "ability_mount_hordescorpiongreen",
             ["itemId"] = 206027,
             ["name"] = "Felcrystal Scorpion",
@@ -10750,7 +10427,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1785,
-            ["highlighted"] = true,
             ["icon"] = "inv_clefthoofdraenormount_purple",
             ["itemId"] = 207821,
             ["name"] = "Ancestral Clefthoof",
@@ -10758,7 +10434,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1574,
-            ["highlighted"] = true,
             ["icon"] = "inv_crabmount_blue",
             ["itemId"] = 190168,
             ["name"] = "Crusty Crawler",
@@ -10766,7 +10441,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 646,
-            ["highlighted"] = true,
             ["icon"] = "inv_infernalmountblue",
             ["itemId"] = 137576,
             ["name"] = "Coldflame Infernal",
@@ -10774,7 +10448,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1799,
-            ["highlighted"] = true,
             ["icon"] = "inv_broommount2_red",
             ["itemId"] = 208598,
             ["name"] = "Eve's Ghastly Rider",
@@ -10782,7 +10455,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1841,
-            ["highlighted"] = true,
             ["icon"] = "inv_fox2_darkred",
             ["itemId"] = 210919,
             ["name"] = "Crimson Glimmerfur",
@@ -10790,7 +10462,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1942,
-            ["highlighted"] = true,
             ["icon"] = "inv_scarabmount_copper",
             ["itemId"] = 211074,
             ["name"] = "Jeweled Copper Scarab",
@@ -10798,7 +10469,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1586,
-            ["highlighted"] = true,
             ["icon"] = "inv_pterrordax2mount_gold",
             ["itemId"] = 190767,
             ["name"] = "Armored Golden Pterrordax",
@@ -10806,7 +10476,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1956,
-            ["highlighted"] = true,
             ["icon"] = "inv_lovefoxmount_pink",
             ["itemId"] = 212227,
             ["name"] = "Fur-endship Fox",
@@ -10814,7 +10483,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2035,
-            ["highlighted"] = true,
             ["icon"] = "inv_peacockmount_blue",
             ["itemId"] = 212630,
             ["name"] = "Majestic Azure Peafowl",
@@ -10822,7 +10490,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2039,
-            ["highlighted"] = true,
             ["icon"] = "inv_turtlemount2_01",
             ["itemId"] = 212920,
             ["name"] = "Savage Blue Battle Turtle",
@@ -10830,7 +10497,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1468,
-            ["highlighted"] = true,
             ["icon"] = "inv_primaldragonflymount_orange",
             ["itemId"] = 192766,
             ["name"] = "Amber Skitterfly",
@@ -10838,7 +10504,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2152,
-            ["highlighted"] = true,
             ["icon"] = "inv_goblinsurfboardmount_white",
             ["itemId"] = 221814,
             ["name"] = "Pearlescent Goblin Wave Shredder",
@@ -10846,7 +10511,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2189,
-            ["highlighted"] = true,
             ["icon"] = "inv_oldgodfishmount_purple",
             ["itemId"] = 223285,
             ["name"] = "Underlight Corrupted Behemoth",
@@ -10854,7 +10518,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2201,
-            ["highlighted"] = true,
             ["icon"] = "inv_alliancewolfmount2_white",
             ["itemId"] = 223469,
             ["name"] = "Sentinel War Wolf",
@@ -10862,7 +10525,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2198,
-            ["highlighted"] = true,
             ["icon"] = "inv_nightsaberhordemount_red",
             ["itemId"] = 223449,
             ["name"] = "Kor'kron Warsaber",
@@ -10870,7 +10532,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2238,
-            ["highlighted"] = true,
             ["icon"] = "inv_treasurebasiliskmount_tan",
             ["itemId"] = 226040,
             ["name"] = "Plunderlord's Golden Crocolisk",
@@ -10878,7 +10539,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2239,
-            ["highlighted"] = true,
             ["icon"] = "inv_treasurebasiliskmount_green",
             ["itemId"] = 226041,
             ["name"] = "Keg Leg's Radiant Crocolisk",
@@ -10886,7 +10546,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2249,
-            ["highlighted"] = true,
             ["icon"] = "inv_mawguardhandmountwhite",
             ["itemId"] = 226506,
             ["name"] = "Hand of Reshkigaal",
@@ -10894,7 +10553,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 1550,
-            ["highlighted"] = true,
             ["icon"] = "ability_mount_progenitorjellyfish_dark",
             ["itemId"] = 187674,
             ["name"] = "Depthstalker",
@@ -11042,7 +10700,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2628,
-            ["highlighted"] = true,
             ["icon"] = "inv_dwarfgryphonmount_orange",
             ["itemId"] = 247793,
             ["name"] = "Cinder-Plumed Highland Gryphon",
@@ -11050,7 +10707,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2630,
-            ["highlighted"] = true,
             ["icon"] = "inv_argustalbukmount_yellow",
             ["itemId"] = 247795,
             ["name"] = "Ornery Breezestrider",
@@ -11058,6 +10714,7 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2625,
+            ["highlighted"] = true,
             ["icon"] = "inv_headlesshorsemanmount2_white",
             ["itemId"] = 247723,
             ["name"] = "The Headless Horseman's Hallowed Charger",
@@ -11191,7 +10848,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 3102,
-            ["highlighted"] = true,
             ["icon"] = "8028501",
             ["itemId"] = 278573,
             ["name"] = "Crested Ember Leafmimic",
@@ -11199,7 +10855,6 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 3104,
-            ["highlighted"] = true,
             ["icon"] = "8028503",
             ["itemId"] = 278575,
             ["name"] = "Crested Verdant Leafmimic",
@@ -11207,11 +10862,18 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 3103,
-            ["highlighted"] = true,
             ["icon"] = "8028502",
             ["itemId"] = 278574,
             ["name"] = "Crested Aqua Leafmimic",
             ["spellid"] = 1305206,
+          },
+          {
+            ["ID"] = 2652,
+            ["highlighted"] = true,
+            ["icon"] = "inv_soulhoundmount_green",
+            ["itemId"] = 250191,
+            ["name"] = "Bilebound Ur'zul",
+            ["spellid"] = 1250481,
           },
           {
             ["ID"] = 799,
@@ -11571,15 +11233,6 @@ SimpleCollectionData = {
             ["notObtainable"] = true,
             ["notReleased"] = true,
             ["spellid"] = 1294677,
-          },
-          {
-            ["ID"] = 2652,
-            ["icon"] = "inv_soulhoundmount_green",
-            ["itemId"] = 250191,
-            ["name"] = "Bilebound Ur'zul",
-            ["notObtainable"] = true,
-            ["notReleased"] = true,
-            ["spellid"] = 1250481,
           },
           {
             ["ID"] = 3105,
@@ -12453,12 +12106,14 @@ SimpleCollectionData = {
           {
             ["ID"] = 1290,
             ["icon"] = "inv_ratmount2",
+            ["itemId"] = "255700",
             ["name"] = "Squeakers, the Trickster",
             ["spellid"] = 308078,
           },
           {
             ["ID"] = 1289,
             ["icon"] = "inv_aetherserpentmount",
+            ["itemId"] = "255693",
             ["name"] = "Ensorcelled Everwyrm",
             ["spellid"] = 307932,
           },
@@ -12756,6 +12411,20 @@ SimpleCollectionData = {
             ["name"] = "Hearthkeeper's Wandering Caravan",
             ["spellid"] = 142515,
           },
+          {
+            ["ID"] = 2937,
+            ["icon"] = "7673157",
+            ["itemId"] = 268833,
+            ["name"] = "Zothwing Darkseeker",
+            ["spellid"] = 1283837,
+          },
+          {
+            ["ID"] = 2938,
+            ["icon"] = "7673158",
+            ["itemId"] = 268834,
+            ["name"] = "Zothwing Deepseeker",
+            ["spellid"] = 1283838,
+          },
         },
         ["name"] = "Blizzard Store",
       },
@@ -12798,10 +12467,10 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2984,
-            ["highlighted"] = true,
             ["icon"] = "inv_rabbitmountvoid",
             ["itemId"] = 274260,
             ["name"] = "Rabbit'ath",
+            ["resale"] = true,
             ["spellid"] = 1293456,
           },
         },
@@ -12928,6 +12597,25 @@ SimpleCollectionData = {
           },
         },
         ["name"] = "WoW Classic",
+      },
+      {
+        ["items"] = {
+          {
+            ["ID"] = 3107,
+            ["icon"] = "7754350",
+            ["itemId"] = 280519,
+            ["name"] = "Cerulean Prideclaw",
+            ["spellid"] = 1309109,
+          },
+          {
+            ["ID"] = 3125,
+            ["icon"] = "7931171",
+            ["itemId"] = 280599,
+            ["name"] = "Veteran Adventurer's Loyal Companion",
+            ["spellid"] = 1309376,
+          },
+        },
+        ["name"] = "WoW Forever",
       },
       {
         ["id"] = "435bf98f",
@@ -13298,14 +12986,6 @@ SimpleCollectionData = {
             ["resale"] = true,
             ["spellid"] = 113120,
           },
-          {
-            ["ID"] = 532,
-            ["icon"] = "inv_ghostlycharger",
-            ["itemId"] = 93671,
-            ["name"] = "Ghastly Charger",
-            ["resale"] = true,
-            ["spellid"] = 136505,
-          },
         },
         ["name"] = "Trading Card Game / Auction House",
       },
@@ -13397,10 +13077,10 @@ SimpleCollectionData = {
           },
           {
             ["ID"] = 2850,
-            ["highlighted"] = true,
             ["icon"] = "inv_flyingcarpetmount4",
             ["itemId"] = 263449,
             ["name"] = "Fluffy Comfy Flying Quilt",
+            ["notObtainable"] = true,
             ["spellid"] = 1270520,
           },
         },
@@ -14034,24 +13714,6 @@ SimpleCollectionData = {
             ["spellid"] = 1263369,
           },
           {
-            ["ID"] = 2937,
-            ["icon"] = "7673157",
-            ["itemId"] = 268833,
-            ["name"] = "Zothwing Darkseeker",
-            ["notObtainable"] = true,
-            ["notReleased"] = true,
-            ["spellid"] = 1283837,
-          },
-          {
-            ["ID"] = 2938,
-            ["icon"] = "7673158",
-            ["itemId"] = 268834,
-            ["name"] = "Zothwing Deepseeker",
-            ["notObtainable"] = true,
-            ["notReleased"] = true,
-            ["spellid"] = 1283838,
-          },
-          {
             ["ID"] = 2832,
             ["icon"] = "7754063",
             ["itemId"] = 269659,
@@ -14202,6 +13864,33 @@ SimpleCollectionData = {
             ["notObtainable"] = true,
             ["notReleased"] = true,
             ["spellid"] = 1297808,
+          },
+          {
+            ["ID"] = 3108,
+            ["icon"] = "7754351",
+            ["itemId"] = 280520,
+            ["name"] = "[PH] Purple Cat Mount",
+            ["notObtainable"] = true,
+            ["notReleased"] = true,
+            ["spellid"] = 1309110,
+          },
+          {
+            ["ID"] = 3109,
+            ["icon"] = "7754352",
+            ["itemId"] = 280521,
+            ["name"] = "[PH] Brown Cat Mount",
+            ["notObtainable"] = true,
+            ["notReleased"] = true,
+            ["spellid"] = 1309112,
+          },
+          {
+            ["ID"] = 3110,
+            ["icon"] = "7754353",
+            ["itemId"] = 280522,
+            ["name"] = "[PH] White Blue Cat Mount",
+            ["notObtainable"] = true,
+            ["notReleased"] = true,
+            ["spellid"] = 1309114,
           },
         },
         ["name"] = "Unknown",
